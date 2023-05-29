@@ -75,7 +75,7 @@
                        <!-- <div class="overlay"></div>-->
                   </div>
                   <div class="home-img">
-                       <!-- <img src="image/marwa.jpeg" alt="">-->
+                       <!-- <img src="marwa.jpeg" alt="">-->
                   </div>
             </div>
 
@@ -83,7 +83,7 @@
       <!-- Aboutsection design-->
       <section class="about" id="about">
             <div class="about-img">
-                  <img src="image/image.png" alt="">
+                  <img src="image.png" alt="">
             </div>
             <div class="about-content">
                   <h1 class="heading"> About <span>Ma</span></h1>
@@ -114,7 +114,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia recusandae facilis
                               amet,
                               nemo voluptate ipsa iure, </p>
-                        <a href="#file:///home/user/Portfolio%20marwa*/graphique.html" class="btn">Read More</a>
+                        <a href="graphique.html" class="btn">Read More</a>
                   </div>
                   <div class="services-box">
 
@@ -123,7 +123,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia recusandae facilis
                               amet,
                               nemo voluptate ipsa iure, </p>
-                        <a href="file:///home/user/Portfolio%20marwa*/Marketing.html" class="btn">Read More</a>
+                        <a href="/Marketing.html" class="btn">Read More</a>
                   </div>
                   <div class="services-box">
 
@@ -132,7 +132,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia recusandae facilis
                               amet,
                               nemo voluptate ipsa iure, </p>
-                        <a href="file:///home/user/Portfolio%20marwa*/photographe.html" class="btn">Read More</a>
+                        <a href="/photographe.html" class="btn">Read More</a>
                   </div>
             </div>
       </section>
@@ -142,35 +142,35 @@
                   <br>
             <div class="portfolio-container">
                   <div class="portfolio-box">
-                        <img src="image/opt.png" alt="">
+                        <img src="opt.png" alt="">
                         <div class="portfolio-layer">
                               <h4> Web Development </h4>
                              
-                              <a href="file:///home/user/Portfolio%20marwa*/develop.html"> <i class='bx bx-link-external'></i></a>
+                              <a href="/develop.html"> <i class='bx bx-link-external'></i></a>
                         </div>
                   </div>
                   <div class="portfolio-box">
-                        <img src="image/sakkaw.png" alt="">
+                        <img src="sakkaw.png" alt="">
                         <div class="portfolio-layer">
                               <h4> Web Development </h4>
                              
-                              <a href="file:///home/user/Portfolio%20marwa*/develop.html"> <i class='bx bx-link-external'></i></a>
+                              <a href="/develop.html"> <i class='bx bx-link-external'></i></a>
                         </div>
                   </div>
                   <div class="portfolio-box">
-                        <img src="image/pub5.jpeg" alt="">
+                        <img src="pub5.jpeg" alt="">
                         <div class="portfolio-layer">
                               <h4> Graphic Design </h4>
                               <p>  </p>
-                              <a href="file:///home/user/Portfolio%20marwa*/graphique.html"> <i class='bx bx-link-external'></i></a>
+                              <a href="/graphique.html"> <i class='bx bx-link-external'></i></a>
                         </div>
                   </div>
                   <div class="portfolio-box">
-                        <img src="image/pub3.jpeg" alt="">
+                        <img src="pub3.jpeg" alt="">
                         <div class="portfolio-layer">
                               <h4> Graphic Design </h4>
                               <p> </p>
-                              <a href="file:///home/user/Portfolio%20marwa*/graphique.html"> <i class='bx bx-link-external'></i></a>
+                              <a href="/graphique.html"> <i class='bx bx-link-external'></i></a>
                         </div>
                   </div>
 
@@ -183,7 +183,7 @@
                   <div class="testimonial-box">
                         <div class="testimonial-content">
                               <div class="testimonial-slide">
-                                    <img src="image/image.png" alt="">
+                                    <img src="image.png" alt="">
                                     <h3>Marwa fakhfakh</h3>
                                     <p style="color: rgb(9, 116, 216);"> ADRESSE: Route Sokra km 4 , Sfax 3064 , Tunisie .
                                      <br>
@@ -224,7 +224,8 @@
 <script>
       var btn=document.getElementById('btn');
       btn.addEventListener('click', function (e){
-            e.preventDefault()
+            e.preventDefault();
+            console.log("hello");
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var mobile = document.getElementById('mobile').value;
@@ -236,8 +237,8 @@
     
     SecureToken : "bd9f4d68-4bf2-4198-b027-482d7707f767",
     To : 'marwafakhfakh700@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "email subject",
+    From : 'marwafakhfakh700@gmail.com',
+    Subject : subject,
     Body : body
 }).then(
   message => alert("message sent succesfully ")
